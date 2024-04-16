@@ -9,9 +9,9 @@ export default function NavbarItem({ title, param }) {
   return (
     <div>
       <Link
-        className={`text-white hover:text-amber-500 font-semibold ${
+        className={`text-white hover:text-amber-600 font-semibold ${
           genre === param
-            ? ' text-lime-500'
+            ? 'underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg'
             : ''
         }`}
         href={`/?genre=${param}`}
